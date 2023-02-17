@@ -9,12 +9,15 @@ export default function Home() {
         <title>Virginia Cheng</title>
         <link rel="icon" href="/bao_icon.png" />
       </Head>
+      <Header />
 
       <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <h1 className="name">
+          Virginia Cheng
+        </h1>
+        <h3>
+          Software Engineer
+        </h3>
       </main>
 
       <Footer />
