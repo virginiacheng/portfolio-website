@@ -12,7 +12,7 @@ export default function Home() {
       <Header />
 
       <main>
-        <h1 className="name">
+        <h1 className="text-3xl font-bold">
           Virginia Cheng
         </h1>
         <h3>
