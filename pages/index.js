@@ -16,7 +16,7 @@ export default function Home() {
           Virginia Cheng
         </h1>
         <h3>
-          Software Engineer
+          Full-Stack Software Engineer II at EverTrue
         </h3>
       </main>
 
