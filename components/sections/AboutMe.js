@@ -1,6 +1,9 @@
 export default function AboutMe() {
     return (
         <>
+        <h2 className="text-3xl font-bold text-indigo-200 hover:text-indigo-400 hover:text-4xl transition-all mb-8">
+            About Me
+        </h2>
         <div>
           I am a full-stack software engineer with 2 years of industry experience working in web applications.
           Currently, I specialize in CSS, HTML, Javascript with AngularJS (1.x), React and Vue.js frameworks for the front-end and PHP with Laravel framework and SQL database for the back-end.

@@ -1,7 +1,7 @@
 export default function Nav() {
     return (
         <div>
-            <h1 className="text-5xl font-bold text-indigo-400">
+            <h1 className="text-5xl font-bold text-sky-400">
             Virginia Cheng
             </h1>
             <h2 className="text-2xl mt-2 text-indigo-200">
