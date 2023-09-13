@@ -1,21 +1,29 @@
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons' 
 
-export default function ExperienceItem({ company, role, description, time, link, tech, img }) {
+export default function WorkItem({ name, company, role, description, time, link, github, tech, img }) {
     return (
         <div className="flex mb-8">
             <img className="w-1/5" src={img}></img>
             <div className="ml-6">
-
                 <h3 className="text-2xl font-bold text-indigo-200">
-                    <a href={link} target="_blank" rel="noopener noreferrer">
-                        { company }
+                    <a className="hover:text-3xl hover:text-indigo-400 transition-all" href={link} target="_blank" rel="noopener noreferrer">
+                        { name ? name : company }
                     </a>
                     {/* <FontAwesomeIcon className="ml-2 hidden" icon={faArrowUpRightFromSquare} /> */}
                 </h3>
-                <h4 className="font-bold">
-                    {role}
-                </h4>
+                {
+                    role ? 
+                        <h4 className="font-bold">
+                            {role}
+                        </h4>
+                        :
+                        <a className="text-xl font-bold hover:text-2xl hover:text-indigo-400 transition-all" href={github} target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon icon={faGithub} /> Github Link
+                            {/* <FontAwesomeIcon className="text-sm" icon={faArrowUpRightFromSquare} /> */}
+                        </a>
+                }
                 <h5>
                     {time}
                 </h5>
