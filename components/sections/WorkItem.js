@@ -33,7 +33,7 @@ export default function WorkItem({ name, company, role, description, time, link,
                 <div className="flex flex-wrap mt-4">
                     {
                         tech.map((skill, i) => (
-                            <div className="border-2 border-indigo-800 rounded-full bg-indigo-200 text-indigo-800 w-max px-4 py-2 mt-2 mr-2">
+                            <div key={i} className="border-2 border-indigo-800 rounded-full bg-indigo-200 text-indigo-800 w-max px-4 py-2 mt-2 mr-2">
                                 {skill}
                             </div>
                         ))

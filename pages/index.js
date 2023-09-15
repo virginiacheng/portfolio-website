@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Header from '@components/Header'
-import Footer from '@components/Footer'
 import Nav from '@components/Nav'
 import HomeContent from '@components/HomeContent'
 
@@ -21,8 +20,6 @@ export default function Home() {
             <HomeContent />
           </div>
       </div>
-
-      <Footer />
     </div>
   )
 }

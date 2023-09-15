@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons' 
+
 export default function Nav() {
     return (
         <div>
@@ -24,6 +27,15 @@ export default function Nav() {
                         Projects
                     </a>
                 </h3>
+            </div>
+
+            <div className="mt-8">
+                <a href="https://www.linkedin.com/in/virginia-cheng/" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faLinkedin} className="text-4xl m-2 hover:text-indigo-400" />
+                </a>
+                <a href="https://github.com/virginiacheng" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faGithub} className="text-4xl m-2 hover:text-indigo-400" />
+                </a>
             </div>
       </div>
     )
