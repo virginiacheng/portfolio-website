@@ -6,7 +6,7 @@ import HomeContent from '@components/HomeContent'
 
 export default function Home() {
   return (
-    <div className="bg-slate-900 text-slate-400 text-lg">
+    <div className="bg-slate-800 text-neutral-200 text-lg">
       <Head>
         <title>Virginia Cheng</title>
         <link rel="icon" href="/bao_icon.png" />
@@ -22,7 +22,7 @@ export default function Home() {
           </div>
       </div>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

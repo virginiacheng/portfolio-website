@@ -1,7 +1,7 @@
 export default function AboutMe() {
     return (
-        <>
-        <h2 className="text-3xl font-bold text-indigo-200 hover:text-indigo-400 hover:text-4xl transition-all mb-8">
+      <section id="about-me" aria-label="About Me">
+        <h2 className="text-3xl font-bold text-indigo-400 mb-8">
             About Me
         </h2>
         <div>
@@ -17,6 +17,6 @@ export default function AboutMe() {
           <br></br>
           In my spare time, I enjoy rock climbing, pottery, making cakes, and watching the NFL.
         </div>
-      </>
+      </section>
     )
   }
