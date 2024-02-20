@@ -6,7 +6,7 @@ export default function AboutMe() {
         aria-label="About Me"
         className="block h-48 invisible -mt-48"
       ></span>
-      <section className="mb-16">
+      <section id="about-content" className="mb-16" data-section>
         <h2 className="text-3xl font-bold text-indigo-400 mb-8">About Me</h2>
         <div>
           I am a full-stack software engineer with 2 years of industry

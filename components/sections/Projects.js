@@ -9,7 +9,7 @@ export default function Projects() {
         aria-label="Projects"
         className="block h-48 invisible -mt-48"
       ></span>
-      <section>
+      <section id="projects-content" className="mb-16" data-section>
         <h2 className="text-3xl font-bold text-indigo-400 mb-8">Projects</h2>
         {data.map((item, i) => (
           <WorkItem

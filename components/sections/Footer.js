@@ -3,9 +3,9 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
   return (
-    <div className="mt-16 w-3/5">
+    <div className="mt-16">
       <p>
-        @ Virginia Cheng 2023
+        @ Virginia Cheng 2024
         <br></br>
         <a
           className="hover:text-indigo-400"

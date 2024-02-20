@@ -14,7 +14,7 @@ export default function Home() {
         <div className="flex-auto lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-48">
           <Nav />
         </div>
-        <div className="flex-auto pt-24 lg:w-1/2 lg:py-48">
+        <div className="flex-auto pt-24 lg:w-1/2 lg:pt-48 pb-6">
           <HomeContent />
         </div>
       </div>

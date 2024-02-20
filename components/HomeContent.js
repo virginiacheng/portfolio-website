@@ -5,7 +5,7 @@ import Footer from '@components/sections/Footer';
 
 export default function HomeContent() {
   return (
-    <div>
+    <div id="home-content">
       <AboutMe />
       <Experience />
       <Projects />
