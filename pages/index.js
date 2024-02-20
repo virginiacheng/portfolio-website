@@ -4,7 +4,7 @@ import HomeContent from '@components/HomeContent';
 
 export default function Home() {
   return (
-    <div className="bg-slate-800 text-neutral-200 text-lg">
+    <div className="bg-slate-300 text-slate-600 text-lg">
       <Head>
         <title>Virginia Cheng</title>
         <link rel="icon" href="/bao_icon.png" />
