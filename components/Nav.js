@@ -45,7 +45,7 @@ export default function Nav() {
         Full-Stack Software Engineer II @EverTrue
       </h2>
 
-      <div className="mt-8 text-indigo-400">
+      <div className="mt-8 text-indigo-400 hidden lg:block">
         <h3
           id="about-header"
           className={`hover:text-indigo-800 hover:text-2xl hover:font-bold transition-all ${
