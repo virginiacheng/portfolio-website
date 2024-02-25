@@ -7,7 +7,7 @@ export default function AboutMe() {
         className="block h-48 invisible -mt-48"
       ></span>
       <section id="about-content" className="mb-16" data-section>
-        <h2 className="text-3xl font-bold text-indigo-800 mb-4 sticky top-0 bg-slate-300 py-3 z-10 lg:relative">
+        <h2 className="text-3xl font-bold text-indigo-800 sticky top-0 bg-slate-300 py-3 z-10 lg:relative">
           About Me
         </h2>
         <div>
