@@ -22,7 +22,6 @@ export default function Experience() {
             time={item.time}
             link={item.link}
             tech={item.tech}
-            img={item.img}
             tooltip={item.tooltip}
           />
         ))}

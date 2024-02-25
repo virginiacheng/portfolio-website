@@ -7,7 +7,6 @@ const experienceData = [
     time: 'August 2021 - Present',
     link: 'https://www.evertrue.com/',
     tech: ['AngularJS', 'React', 'Javascript', 'Laravel', 'PHP', 'SQL'],
-    img: '/et_logo.svg',
     tooltip: 'Open EverTrue Website',
   },
   {
@@ -18,7 +17,6 @@ const experienceData = [
     time: 'June 2020 - August 2020',
     link: 'https://www.thankview.com/',
     tech: ['AngularJS', 'Javascript', 'Laravel', 'PHP', 'SQL'],
-    img: '/tv_logo.svg',
     tooltip: 'Open ThankView Website',
   },
   {
@@ -29,7 +27,6 @@ const experienceData = [
     time: 'May 2019 - October 2019',
     link: 'https://www.thankview.com/',
     tech: ['AngularJS', 'Javascript', 'Laravel', 'PHP', 'SQL'],
-    img: '/tv_logo.svg',
     tooltip: 'Open ThankView Website',
   },
 ];

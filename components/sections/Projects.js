@@ -22,7 +22,6 @@ export default function Projects() {
             link={item.link}
             github={item.github}
             tech={item.tech}
-            img={item.img}
             tooltip={item.tooltip}
           />
         ))}
