@@ -7,7 +7,9 @@ export default function AboutMe() {
         className="block h-48 invisible -mt-48"
       ></span>
       <section id="about-content" className="mb-16" data-section>
-        <h2 className="text-3xl font-bold text-indigo-800 mb-8">About Me</h2>
+        <h2 className="text-3xl font-bold text-indigo-800 sticky top-0 bg-slate-300 py-3 z-10 lg:relative">
+          About Me
+        </h2>
         <div>
           I am a full-stack software engineer with 2 years of industry
           experience working in web applications. Currently, I specialize in
