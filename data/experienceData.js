@@ -3,7 +3,7 @@ const experienceData = [
     company: 'EverTrue',
     role: 'Software Engineer II - Full Stack',
     description:
-      'Build new or improve existing features designed to achieve product-led growth, integrate third party softwares through RESTful API services such as Stripe and Blackbaud NXT, perform code reviews that guarantee code quality, deploy code updates and new features for production using CI/CD pipelines, collaborate cross-functionally with the product team to research and develop tech specs',
+      'Lead technical design and development of complex projects, integrate and maintain third-party services like Stripe and Blackbaud NXT through REST APIs, conduct thorough code reviews to maintain high code quality standards, deploy code updates and new features to production environments using CI/CD pipelines, collaborate cross-functionally to research and refine JIRA stories each week',
     time: 'August 2021 - Present',
     link: 'https://www.evertrue.com/',
     tech: ['AngularJS', 'React', 'Javascript', 'Laravel', 'PHP', 'SQL'],
