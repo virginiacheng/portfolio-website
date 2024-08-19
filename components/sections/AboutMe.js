@@ -11,7 +11,7 @@ export default function AboutMe() {
           About Me
         </h2>
         <div>
-          I am a full-stack software engineer with 2 years of industry
+          I am a full-stack software engineer with 3 years of industry
           experience working in web applications. Currently, I specialize in
           CSS, HTML, Javascript with AngularJS (1.x), React and Vue.js for the
           front-end and PHP with Laravel framework and MySQL database for the
