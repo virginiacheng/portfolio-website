@@ -6,7 +6,7 @@ import ToolTip from '@components/ToolTip';
 
 export default function Nav() {
   const [selectedSection, setSection] = useState(null);
-  const selectedStyle = 'text-indigo-800 text-2xl font-bold';
+  const selectedStyle = 'text-slate-800 text-2xl font-bold';
   const observer = useRef(null);
 
   useEffect(() => {
@@ -45,10 +45,10 @@ export default function Nav() {
         Full-Stack Software Engineer II @EverTrue
       </h2>
 
-      <div className="mt-8 text-indigo-400 hidden lg:block">
+      <div className="mt-8 hidden lg:block">
         <h3
           id="about-header"
-          className={`hover:text-indigo-800 hover:text-2xl hover:font-bold transition-all ${
+          className={`hover:text-2xl hover:font-bold ${
             selectedSection === 'about-content' ? selectedStyle : 'text-xl'
           }`}
         >
@@ -56,7 +56,7 @@ export default function Nav() {
         </h3>
         <h3
           id="experience-header"
-          className={`hover:text-indigo-800 hover:text-2xl hover:font-bold transition-all ${
+          className={`hover:text-2xl hover:font-bold ${
             selectedSection === 'experience-content' ? selectedStyle : 'text-xl'
           }`}
         >
@@ -64,7 +64,7 @@ export default function Nav() {
         </h3>
         <h3
           id="projects-header"
-          className={`hover:text-indigo-800 hover:text-2xl hover:font-bold transition-all ${
+          className={`hover:text-2xl hover:font-bold ${
             selectedSection === 'projects-content' ? selectedStyle : 'text-xl'
           }`}
         >
@@ -81,7 +81,7 @@ export default function Nav() {
           >
             <FontAwesomeIcon
               icon={faLinkedin}
-              className="text-4xl m-2 hover:text-indigo-600"
+              className="text-4xl m-2 hover:text-slate-500"
             />
           </a>
         </ToolTip>
@@ -93,7 +93,7 @@ export default function Nav() {
           >
             <FontAwesomeIcon
               icon={faGithub}
-              className="text-4xl m-2 hover:text-indigo-600"
+              className="text-4xl m-2 hover:text-slate-500"
             />
           </a>
         </ToolTip>
@@ -105,7 +105,7 @@ export default function Nav() {
           >
             <FontAwesomeIcon
               icon={faFileLines}
-              className="text-4xl m-2 hover:text-indigo-600"
+              className="text-4xl m-2 hover:text-slate-500"
             />
           </a>
         </ToolTip>

@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import ToolTip from '@components/ToolTip';
 
 export default function WorkItem({
@@ -9,17 +7,14 @@ export default function WorkItem({
   description,
   time,
   link,
-  github,
   tech,
-  img,
   tooltip,
 }) {
   return (
     <div className="flex flex-col mb-8">
-      <h3 className="text-2xl font-bold text-indigo-400">
+      <h3>
         <ToolTip message={tooltip}>
           <a
-            className="hover:text-indigo-600 transition-all"
             href={link}
             target="_blank"
             rel="noopener noreferrer"
@@ -28,21 +23,11 @@ export default function WorkItem({
           </a>
         </ToolTip>
       </h3>
-      {role ? (
-        <h4 className="font-bold">{role}</h4>
-      ) : (
-        <ToolTip message="Open Github Link">
-          <a
-            className="text-xl font-bold hover:text-indigo-600 transition-all"
-            href={github}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faGithub} /> Github Link
-          </a>
-        </ToolTip>
-      )}
-      <h5>{time}</h5>
+      { role && 
+        (
+          <h4 className="font-bold">{role + ' | ' + time}</h4>
+        )
+      }
       <p className="mt-2">{description}</p>
       <div className="flex flex-wrap mt-4">
         {tech.map((skill, i) => (
