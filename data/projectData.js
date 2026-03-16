@@ -1,14 +1,13 @@
-const experienceData = [
+const projectData = [
   {
     name: 'Cafe Maddy Cab',
     description:
-      'An initiative that provides essential rides for the vulnerable Asian minority population in New York City',
+      'An initiative that provided essential rides for the vulnerable Asian minority population in New York City.',
     time: 'April 2022 - November 2022',
-    link: 'https://www.cafemaddycab.org/',
-    github: 'https://github.com/jrobsontull/CafeMaddyCab',
+    link: 'https://github.com/jrobsontull/CafeMaddyCab',
     tech: ['React', 'Express.js', 'Node.js', 'Javascript', 'MongoDB'],
-    tooltip: 'Open CMC Website',
+    tooltip: 'Open CMC github',
   },
 ];
 
-export default experienceData;
+export default projectData;

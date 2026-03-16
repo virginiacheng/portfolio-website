@@ -4,7 +4,7 @@ import HomeContent from '@components/HomeContent';
 
 export default function Home() {
   return (
-    <div className="bg-slate-300 text-slate-600 text-lg">
+    <div className="bg-gradient-to-t from-blue-100 via-blue-200 to-blue-300 text-lg">
       <Head>
         <title>Virginia Cheng</title>
         <link rel="icon" href="/bao_icon.png" />

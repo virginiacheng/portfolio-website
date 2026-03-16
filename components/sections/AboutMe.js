@@ -7,10 +7,10 @@ export default function AboutMe() {
         className="block h-48 invisible -mt-48"
       ></span>
       <section id="about-content" className="mb-16" data-section>
-        <h2 className="text-3xl font-bold text-indigo-800 sticky top-0 bg-slate-300 py-3 z-10 lg:relative">
+        <h2>
           About Me
         </h2>
-        <div>
+        <p>
           I am a full-stack software engineer with 3 years of industry
           experience working in web applications. Currently, I specialize in
           CSS, HTML, Javascript with AngularJS (1.x), React and Vue.js for the
@@ -29,7 +29,7 @@ export default function AboutMe() {
           <br></br>
           In my spare time, I enjoy rock climbing, pottery, making cakes, and
           watching the NFL.
-        </div>
+        </p>
       </section>
     </>
   );

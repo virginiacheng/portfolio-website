@@ -3,10 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFileLines } from '@fortawesome/free-solid-svg-icons';
 import ToolTip from '@components/ToolTip';
+import NavHeader from '@components/nav-components/NavHeader';
+import navHeaderSections from 'data/navData';
 
 export default function Nav() {
   const [selectedSection, setSection] = useState(null);
-  const selectedStyle = 'text-indigo-800 text-2xl font-bold';
   const observer = useRef(null);
 
   useEffect(() => {
@@ -42,36 +43,22 @@ export default function Nav() {
     <div className="mr-6">
       <h1 className="text-5xl font-bold text-sky-800">Virginia Cheng</h1>
       <h2 className="text-2xl mt-2 text-sky-600">
-        Full-Stack Software Engineer II @EverTrue
+        Software Engineer @DoorDash
       </h2>
 
-      <div className="mt-8 text-indigo-400 hidden lg:block">
-        <h3
-          id="about-header"
-          className={`hover:text-indigo-800 hover:text-2xl hover:font-bold transition-all ${
-            selectedSection === 'about-content' ? selectedStyle : 'text-xl'
-          }`}
-        >
-          <a href="#about">About Me</a>
-        </h3>
-        <h3
-          id="experience-header"
-          className={`hover:text-indigo-800 hover:text-2xl hover:font-bold transition-all ${
-            selectedSection === 'experience-content' ? selectedStyle : 'text-xl'
-          }`}
-        >
-          <a href="#experience">Experience</a>
-        </h3>
-        <h3
-          id="projects-header"
-          className={`hover:text-indigo-800 hover:text-2xl hover:font-bold transition-all ${
-            selectedSection === 'projects-content' ? selectedStyle : 'text-xl'
-          }`}
-        >
-          <a href="#projects">Projects</a>
-        </h3>
+      {/* TODO: see if it's better to move the mapping into component level */}
+      <div className="mt-8 hidden lg:block">
+        {navHeaderSections.map((section, i) => (
+          <NavHeader
+            key={i}
+            sectionId={section.id}
+            label={section.label}
+            selectedSection={selectedSection}
+          />
+        ))}
       </div>
 
+      {/* TODO: break this up into reusable component  */}
       <div className="mt-8 flex">
         <ToolTip message="Linkedin Profile">
           <a
@@ -81,7 +68,7 @@ export default function Nav() {
           >
             <FontAwesomeIcon
               icon={faLinkedin}
-              className="text-4xl m-2 hover:text-indigo-600"
+              className="text-4xl m-2 hover:text-slate-500"
             />
           </a>
         </ToolTip>
@@ -93,7 +80,7 @@ export default function Nav() {
           >
             <FontAwesomeIcon
               icon={faGithub}
-              className="text-4xl m-2 hover:text-indigo-600"
+              className="text-4xl m-2 hover:text-slate-500"
             />
           </a>
         </ToolTip>
@@ -105,7 +92,7 @@ export default function Nav() {
           >
             <FontAwesomeIcon
               icon={faFileLines}
-              className="text-4xl m-2 hover:text-indigo-600"
+              className="text-4xl m-2 hover:text-slate-500"
             />
           </a>
         </ToolTip>

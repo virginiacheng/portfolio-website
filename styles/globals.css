@@ -14,3 +14,21 @@ body {
 * {
   box-sizing: border-box;
 }
+
+@layer base {
+  h1 {
+    /* @apply text-4xl font-bold; Example H1 styles */
+  }
+  h2 {
+    @apply text-slate-800 text-3xl font-bold top-0 py-3 z-10 lg:relative;
+  }
+  h3 {
+    @apply text-slate-700 hover:text-slate-500 text-2xl font-bold transition-all;
+  }
+  h4 {
+    @apply text-slate-600 font-bold;
+  }
+  p {
+    @apply text-slate-600;
+  }
+}
